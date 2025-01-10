@@ -57,7 +57,7 @@ Creating an agent is easy:
 ```typescript
 const internetAgent = new FeatherAgent({
     model: "deepseek/deepseek-chat",
-    systemPrompt: "You are a helpful assistant that can browse the internet", 
+    systemPrompt: "You are a crypto Market assistant that can browse the internet. Focus on Market trends and analysis. Be precise in price, volume and market data", 
     tools: [internetTool],
 })
 ```
@@ -65,7 +65,7 @@ const internetAgent = new FeatherAgent({
 Running an agent is easier:
 
 ```typescript
-const result = internetAgent.run("What's the latest quantum chip that dropped? How does it advance AI?")
+const result = internetAgent.run("What's the price of MAGIC•AGENT•MONEY? Check on magiceden")
 logger.info("Internet Agent said:", result.output)
 ```
 
